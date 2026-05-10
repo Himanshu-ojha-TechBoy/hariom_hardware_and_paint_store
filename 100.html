@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Our Shop | Hariom Hardware</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #c9962c;
+      --dark: #0f0f0f;
+      --dark2: #1a1a1a;
+      --dark3: #242424;
+      --text: #e8e0d0;
+      --text-muted: #888;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--dark); color: var(--text); font-family: 'Lato', sans-serif; }
+
+    /* ── HEADER ── */
+    header {
+      padding: 80px 48px 40px;
+      text-align: center;
+    }
+    .section-eyebrow { font-size: 11px; letter-spacing: 5px; color: var(--gold); text-transform: uppercase; margin-bottom: 10px; display: block; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: 48px; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px 100px; }
+
+    /* ── SHOP PHOTO SECTION ── */
+    .shop-showcase {
+      position: relative;
+      margin-bottom: 80px;
+      border: 1px solid rgba(201,150,44,0.2);
+      overflow: hidden;
+      height: 450px;
+    }
+    .shop-showcase img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7); }
+    .shop-tag {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: var(--gold);
+      color: #000;
+      padding: 10px 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* ── OWNER SECTION ── */
+    .owner-card {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      background: var(--dark2);
+      border-left: 4px solid var(--gold);
+      align-items: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .owner-img { width: 100%; height: 100%; min-height: 400px; overflow: hidden; }
+    .owner-img img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(0.3); }
+    
+    .owner-details { padding: 60px; }
+    .owner-name { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--gold); margin-bottom: 5px; }
+    .owner-title { font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); margin-bottom: 20px; display: block; }
+    .owner-bio { line-height: 1.8; color: var(--text-muted); font-size: 16px; margin-bottom: 20px; }
+
+    /* ── ADDRESS BLOCK ── */
+    .info-footer {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(201,150,44,0.1);
+    }
+    .info-box h4 { color: var(--gold); margin-bottom: 10px; font-family: 'Playfair Display', serif; }
+    .info-box p { color: var(--text-muted); line-height: 1.6; }
+
+    @media (max-width: 768px) {
+      .owner-card { grid-template-columns: 1fr; }
+      .info-footer { grid-template-columns: 1fr; }
+      .shop-showcase { height: 300px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="section-eyebrow">Establishment</span>
+    <h1 class="section-title">Our Store & Leadership</h1>
+  </header>
+
+  <div class="container">
+    
+    <!-- SHOP PHOTO -->
+    <div class="shop-showcase">
+      <!-- REPLACE WITH YOUR SHOP PHOTO -->
+      <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=uM3JKoLR_XmniaelVxqTzA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=194.95776&pitch=0&thumbfov=100" alt="Hariom Hardware Storefront">
+      <div class="shop-tag">Main Branch · Ghazipur</div>
+    </div>
+
+    <!-- OWNER PHOTO & INFO -->
+    <div class="owner-card">
+      <div class="owner-img">
+        <!-- REPLACE WITH OWNER PHOTO -->
+        <img src="" alt="Owner Portrait">
+        <img src="C:\Users\Abhishek Ojha\Desktop\website\image2.png" alt="Owner Portrait">
+      </div>
+      <div class="owner-details">
+        <span class="owner-title">The Visionary</span>
+        <h2 class="owner-name">Mr. Ashutosh Ojha</h2>
+        <p class="owner-bio">
+          Under the leadership of Mr. Ashutosh Ojha, Hariom Hardware has grown into Ghazipur's most trusted name for quality construction materials and paints. His commitment to authenticity and customer satisfaction remains the cornerstone of our store.
+        </p>
+        <p class="owner-bio">
+          "Quality is not just a standard, it's a promise we fulfill every day for our community."
+        </p>
+      </div>
+    </div>
+
+    <!-- ADDRESS FOOTER -->
+    <div class="info-footer">
+      <div class="info-box">
+        <h4>Store Location</h4>
+        <p>Hariom Hardware & Paint Store<br>Kabirpur Jhurd post-Kundesar, Ghazipur <br>Uttar pradesh , PIN : 233227</p>
+      </div>
+      <div class="info-box">
+        <h4>Connect</h4>
+        <p>Phone: +91 9118354030<br>Email: contact@hariomhardware.com</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
